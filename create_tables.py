@@ -63,9 +63,9 @@ def create_tables():
 def main():
     create_database()
     print('database created successfully')
-    # print('creating tables')
-    # create_tables()
-    # print('tables created successfully')
+    print('creating tables')
+    create_tables()
+    print('tables created successfully')
 
 
 main()
