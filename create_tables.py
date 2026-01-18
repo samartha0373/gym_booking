@@ -1,32 +1,12 @@
 import pymysql
-
-def get_con():
-    '''returns the connection to mysql.'''
-    try:
-        con = pymysql.connect(
-            host = '127.0.0.1',
-            user = 'root',
-            password = 'password')
-        print('connection created')
-        return con
-    except Exception as e:
-        print(f'error in mysql connection {e}.')
-        return None
-
-
-def con_test():
-    con = get_con()
-    if con:
-        print('connection established successfully.')
-    else:
-        print('failed')
+from get_connection import get_con
 
 
 def create_database():
     '''creates database for gym booking with mysql'''
     con = get_con()
     cursor = con.cursor()
-    command = 'CREATE DATABASE IF NOT EXISTS booking1'
+    command = 'CREATE DATABASE IF NOT EXISTS booking'
     cursor.execute(command)
     con.commit()
     print('database created!!!')
@@ -63,9 +43,9 @@ def create_tables():
 def main():
     create_database()
     print('database created successfully')
-    # print('creating tables')
-    # create_tables()
-    # print('tables created successfully')
+    print('creating tables')
+    create_tables()
+    print('tables created successfully')
 
 
 main()
