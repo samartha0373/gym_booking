@@ -1,10 +1,23 @@
-This is a sample banking project where i have learned python and sql and tried to create a simple module using them. 
+Banking Project:
+    A simple Python & MySQL application that simulates basic banking operations:
 
+    ✔ Create and manage accounts  
+    ✔ Add customer data  
+    ✔ Store and retrieve information using SQL  
 
-Steps:- 
-1. install python
-2. install mysql 
-3. install all python dependencis using requirements.txt file
-    [pip install -r requirements.txt]
-4. run the main python file.
-    [ python add_summary.py]
+Tech Stack
+- Python
+- MySQL
+- Git / GitHub
+
+How to Run
+1. Install Python
+2. Install dependencies  
+   `pip install -r requirements.txt`
+3. Run the app  
+   `python add_summary.py`
+
+What I learned
+- Database queries with SQL
+- Python error handling
+- Version control
