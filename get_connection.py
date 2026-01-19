@@ -7,7 +7,7 @@ def get_con():
             host = '127.0.0.1',
             user = 'root',
             password = 'password',
-            database= 'booking')
+            database= 'gym_booking')
         return con
     except Exception as e:
         print(f'error in mysql connection {e}.')
