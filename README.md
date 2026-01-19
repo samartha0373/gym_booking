@@ -9,8 +9,6 @@ A simple gym booking system designed to manage user accounts and customer detail
 
 - Customer Management
   - Add customer details
-  - View customer records
-  - Update customer information
 
 ## Database Tables
 
@@ -40,9 +38,6 @@ A simple gym booking system designed to manage user accounts and customer detail
 1. Clone the repository  
    ```bash
    git clone <https://github.com/samartha0373/gym_booking>
-2. run the file in sequence:   
-- 'connection_test.py'
-- 'create_database.py'
-- 'create_tables.py'
-- 'insert-data.py'
+2. run the program:   
+    - main.py
 
