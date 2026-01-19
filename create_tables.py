@@ -2,23 +2,12 @@ import pymysql
 from get_connection import get_con
 
 
-def create_database():
-    '''creates database for gym booking with mysql'''
-    con = get_con()
-    cursor = con.cursor()
-    command = 'CREATE DATABASE IF NOT EXISTS booking'
-    cursor.execute(command)
-    con.commit()
-    print('database created!!!')
-    con.close()
-
-
 def create_tables():
-    '''creates tables for gym booking with mysql'''
+    '''creates tables customer_details and account_details for gym booking with mysql'''
     con = get_con()
     cursor = con.cursor()
     customer_details = """
-                CREATE TABLE IF NOT EXISTS booking.customer_details (
+                CREATE TABLE IF NOT EXISTS customer_details (
                 customer_id INT PRIMARY KEY AUTO_INCREMENT,
                 first_name VARCHAR(30) NOT NULL,
                 midle_name VARCHAR(30),
@@ -26,7 +15,7 @@ def create_tables():
                 address VARCHAR(50) NOT NULL,
                 email VARCHAR(50) UNIQUE) """
     account_details = """
-                CREATE TABLE IF NOT EXISTS booking.account_details(
+                CREATE TABLE IF NOT EXISTS account_details(
                 customer_id INT PRIMARY KEY,
                 gender ENUM('male','female','others') NOT NULL,
                 membership_type ENUM('cardio','crossfit','weights','powerlifting'),
@@ -40,10 +29,7 @@ def create_tables():
     con.close()
 
 
-def main():
-    create_database()
-    print('database created successfully')
-    print('creating tables')
+def main(): 
     create_tables()
     print('tables created successfully')
 
