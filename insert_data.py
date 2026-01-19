@@ -3,7 +3,8 @@ from get_connection import get_con
 
 
 
-def insert_data():
+def insert_customer_details():
+    """inserts data into customer_details table."""
     con = get_con()
     cursor = con.cursor()
     query = """
@@ -15,6 +16,6 @@ def insert_data():
     con.close()
 
 
-insert_data()
+insert_customer_details()
     
   

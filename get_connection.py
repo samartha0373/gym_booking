@@ -8,7 +8,6 @@ def get_con():
             user = 'root',
             password = 'password',
             database= 'booking')
-        print('connection created')
         return con
     except Exception as e:
         print(f'error in mysql connection {e}.')
