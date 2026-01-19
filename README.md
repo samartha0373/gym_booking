@@ -17,9 +17,9 @@ How to Run
 3. Check connection
    'python3 connection_test.py'
 4. Run the app  
-   -'python3 create_database.py'
-   -'python3 create_tables.py'
-   -'python3 insert_data.py
+   'python3 create_database.py'
+   'python3 create_tables.py'
+   'python3 insert_data.py
    
 
 What I learned
