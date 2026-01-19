@@ -1,28 +1,48 @@
-Banking Project:
-    A simple Python & MySQL application that simulates basic gym booking operations:
+# Gym Booking System
 
-    ✔ Create and manage accounts  
-    ✔ Add customer data  
-    ✔ Store and retrieve information using SQL  
+A simple gym booking system designed to manage user accounts and customer details efficiently. This project uses two database tables: `account_details` and `customer_details`.
 
-Tech Stack
-- Python
-- MySQL
-- Git / GitHub
+## Features
 
-How to Run
-1. Install Python
-2. Install dependencies  
-   `pip install -r requirements.txt`
-3. Check connection
-   'python3 connection_test.py'
-4. Run the app  
-   'python3 create_database.py'
-   'python3 create_tables.py'
-   'python3 insert_data.py
-   
+- User Account Management     
+    - Booking in/out
 
-What I learned
-- Database queries with SQL
-- Python error handling
-- Version control
+- Customer Management
+  - Add customer details
+  - View customer records
+  - Update customer information
+
+## Database Tables
+
+### 1. account_details
+- account_id
+- username
+- password
+- email
+- sign_in/out
+- in/out_time
+
+### 2. customer_details
+- customer_id
+- full_name
+- phone_number
+- membership_type
+- booking_date
+
+## Technologies Used
+
+- Programming Language: Python
+- Database: MySQL
+- Interface: Command Line
+
+## Getting Started
+
+1. Clone the repository  
+   ```bash
+   git clone <https://github.com/samartha0373/gym_booking>
+2. run the file in sequence:   
+- 'connection_test.py'
+- 'create_database.py'
+- 'create_tables.py'
+- 'insert-data.py'
+
