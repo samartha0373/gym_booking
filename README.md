@@ -38,6 +38,8 @@ A simple gym booking system designed to manage user accounts and customer detail
 1. Clone the repository  
    ```bash
    git clone <https://github.com/samartha0373/gym_booking>
-2. run the program:   
+2. install dependencies:   
+    - pip3 install -r requirements.txt
+3. run the program:   
     - main.py
 
