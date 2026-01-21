@@ -26,7 +26,7 @@ def add_customer():
 
 
 def customer_signing():
-    """GYM signing in and out."""
+    """Creating customer account."""
     print('creating customer signing in account')
     con = get_con()
     cursor = con.cursor()
