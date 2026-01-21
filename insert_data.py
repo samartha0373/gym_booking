@@ -4,7 +4,6 @@ from get_connection import get_con
 
 def add_customer():
     """inserts data into customer_details table."""
-    print('registering a new customer')
     con = get_con()
     cursor = con.cursor()
     query = """
@@ -20,14 +19,13 @@ def add_customer():
         except Exception as e:
             print(f'error in the program: {e}')
             value += 1
-    print('customer registered')
+    print('customer added')
     con.commit()
     con.close()
 
 
 def customer_signing():
     """Creating customer account."""
-    print('creating customer signing in account')
     con = get_con()
     cursor = con.cursor()
     value = 1
