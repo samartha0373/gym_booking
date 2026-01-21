@@ -5,7 +5,7 @@ def create_database():
     con = pymysql.connect(
         host = 'localhost',
         user = 'root',
-        password= 'password' )
+        password= 'your_password' )
     cursor = con.cursor()
     command = 'CREATE DATABASE IF NOT EXISTS gym_booking'
     cursor.execute(command)
@@ -14,4 +14,3 @@ def create_database():
     con.close()
 
 
-create_database()
