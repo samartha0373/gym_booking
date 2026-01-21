@@ -30,7 +30,7 @@ A simple gym booking system designed to manage user accounts and customer detail
 ## Technologies Used
 
 - Programming Language: Python
-- Database: MySQL
+- Database: MySQL 
 - Interface: Command Line
 
 ## Getting Started
@@ -38,8 +38,9 @@ A simple gym booking system designed to manage user accounts and customer detail
 1. Clone the repository  
    ```bash
    git clone <https://github.com/samartha0373/gym_booking>
-2. install dependencies:   
+2. replace 'your_password' with your MySQL password on get_connection.py file:  
+4. install dependencies:   
     - pip3 install -r requirements.txt
-3. run the program:   
+5. run the program:   
     - main.py
 
